@@ -25,6 +25,8 @@
 4. Website
 5. Pitch
 6. Sourcing price data
+    1. Social media
+    2.
 7. Sourcing social media clues and hints
 8. EtherScan API (verification of contracts)
 9. Github repo - Laurence
