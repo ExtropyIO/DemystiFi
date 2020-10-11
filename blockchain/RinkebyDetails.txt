@@ -1,0 +1,6 @@
+Rinkeby Details
+
+
+Demistify Contract
+Contract Address : 0x7d472c6bc3ffb2abc0af6f2274d550e650b0dc5b
+Owner : 0xca1c0f937729979c5ca30465416c95cae626f2b6
