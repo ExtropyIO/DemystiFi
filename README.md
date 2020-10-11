@@ -9,18 +9,19 @@
 -   Analyse smart contracts for 'rug pulling' or too much developer control
 -   Note which contracts haven't been audited
 -   Plugin should also be aware of ENS names for the contract
+    -   https://docs.ens.domains/dapp-developer-guide/resolving-names
 -   Use d3.js for display - e.g. https://observablehq.com/@d3/radial-tidy-tree
 -   https://duneanalytics.com/ may also be useful
 -   https://etherscan.io/apis#contracts for analysing smart contracts / checking verification status
 
 ## Areas to investigate
 
-1. MetaMask plugin development
+1. MetaMask plugin (snap) development
     1. Visualising data
 2. Storing/retrieving data (with Textile/Powergate and Graph)
     1. Data schema
     2. Relevant info to store
-3. Sponsor prizes - Tom will do this
+3. Done. Sponsor prizes - Tom will do this
     1. Relevance
 4. Website
 5. Pitch
@@ -28,8 +29,9 @@
     1. Social media
     2.
 7. Sourcing social media clues and hints
+    1. Twitter API
 8. EtherScan API (verification of contracts)
-9. Github repo - Laurence
+9. Done. Github repo - Laurence
 
 ---
 
