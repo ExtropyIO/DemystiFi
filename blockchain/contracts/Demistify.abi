@@ -1,0 +1,191 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_walletAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "string",
+				"name": "_IPFSDetails",
+				"type": "string"
+			}
+		],
+		"name": "addWallet",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_walletAddress",
+				"type": "address"
+			}
+		],
+		"name": "deleteWallet",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "renounceOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_walletAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint64",
+				"name": "_newScore",
+				"type": "uint64"
+			}
+		],
+		"name": "ScoreUpdated",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_walletAddress",
+				"type": "address"
+			},
+			{
+				"internalType": "uint64",
+				"name": "_newScore",
+				"type": "uint64"
+			}
+		],
+		"name": "updateScore",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_walletAddress",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "_IPFSDetails",
+				"type": "string"
+			}
+		],
+		"name": "WalletAdded",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"internalType": "address",
+				"name": "_walletAddress",
+				"type": "address"
+			}
+		],
+		"name": "WalletDeleted",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_walletAddress",
+				"type": "address"
+			}
+		],
+		"name": "getDetailsForWallet",
+		"outputs": [
+			{
+				"internalType": "uint64",
+				"name": "walletScore_",
+				"type": "uint64"
+			},
+			{
+				"internalType": "string",
+				"name": "IPFSDetails_",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getNumberWallets",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
