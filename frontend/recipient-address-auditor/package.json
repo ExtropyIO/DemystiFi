@@ -4,10 +4,9 @@
   "description": "Audits recipients of new transactions and updates metamask state with audit results",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.20.0",
+    "express-graphql": "^0.11.0",
     "graphql": "^15.3.0",
-    "websocket": "^1.0.32",
-    "winston": "^3.3.3"
+    "graphql-request": "^3.1.0"
   },
   "devDependencies": {},
   "scripts": {
