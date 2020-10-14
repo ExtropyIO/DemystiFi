@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "axios": "^0.20.0",
+    "websocket": "^1.0.32",
     "winston": "^3.3.3"
   },
   "devDependencies": {},

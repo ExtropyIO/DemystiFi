@@ -4,7 +4,7 @@
   "description": "An IPFS Snap for MetaMask",
   "main": "index.js",
   "dependencies": {
-    "eth-json-rpc-errors": "^1.1.0",
+    "eth-json-rpc-errors": "^1.1.1",
     "ipfs-mini": "^1.1.5"
   },
   "devDependencies": {},
