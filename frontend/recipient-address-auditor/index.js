@@ -1,20 +1,5 @@
 const { request, gql } = require('graphql-request');
-const PocketLib = require('@pokt-network/web3-provider');
-const Web3 = require('web3');
-const Transaction = require('ethereumjs-tx').Transaction;
-const Pocket = PocketLib.Pocket;
-const PocketAAT = PocketLib.PocketAAT;
-const Configuration = PocketLib.Configuration;
-const PocketProvider = PocketLib.PocketProvider;
-const HttpProvider = PocketLib.HttpRpcProvider;
-const TransactionSigner = PocketLib.TransactionSigner;
-
-// https://docs.pokt.network/docs/pocket-js
-const dispatchers = [
-  new URL('https://node3.testnet.pokt.network:443'),
-  new URL('https://node2.testnet.pokt.network:443'),
-];
-const blockchain = '0022';
+const pokt = require('./pokt.js');
 
 // https://graphql.org/code/#javascript-1
 // https://github.com/prisma-labs/graphql-request
@@ -46,7 +31,7 @@ async function graphqlReq(address) {
 }
 
 /**
- * Verify data from GraphQL with direct smart contract access
+ * Verifies data from GraphQL with direct additional call to smart contract via Pokt
  * @param {*} address
  */
 async function web3Request(address) {

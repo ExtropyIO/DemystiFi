@@ -4,9 +4,13 @@
   "description": "Audits recipients of new transactions and updates metamask state with audit results",
   "main": "index.js",
   "dependencies": {
+    "@pokt-network/web3-provider": "0.0.6-rc",
+    "dotenv": "^8.2.0",
+    "ethereumjs-tx": "^2.1.2",
     "express-graphql": "^0.11.0",
     "graphql": "^15.3.0",
-    "graphql-request": "^3.1.0"
+    "graphql-request": "^3.1.0",
+    "web3": "^1.3.0"
   },
   "devDependencies": {},
   "scripts": {
