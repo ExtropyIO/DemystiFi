@@ -1,0 +1,35 @@
+specVersion: 0.0.2
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Contract
+    network: rinkeby
+    source:
+      address: "0x7d472c6bc3ffb2abc0af6f2274d550e650b0dc5b"
+      abi: Contract
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - OwnershipTransferred
+        - ScoreUpdated
+        - WalletAdded
+        - WalletDeleted
+      abis:
+        - name: Contract
+          file: ./abis/Contract.json
+      eventHandlers:
+        - event: OwnershipTransferred(indexed address,indexed address)
+          handler: handleOwnershipTransferred
+        - event: ScoreUpdated(address,uint64)
+          handler: handleScoreUpdated
+        - event: WalletAdded(address,string)
+          handler: handleWalletAdded
+        - event: WalletDeleted(address)
+          handler: handleWalletDeleted
+      callHandlers:
+        - function: getNumberWallets()
+          handler: handlegetNumberWallets
+      file: ./src/mapping.ts

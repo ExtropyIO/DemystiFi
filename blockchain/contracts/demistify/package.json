@@ -1,0 +1,17 @@
+{
+  "name": "demistify",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ kirol54/demistify",
+    "create-local": "graph create --node http://localhost:8020/ kirol54/demistify",
+    "remove-local": "graph remove --node http://localhost:8020/ kirol54/demistify",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 kirol54/demistify"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.18.0",
+    "@graphprotocol/graph-ts": "0.18.0",
+    "ws": "^7.3.1"
+  }
+}
