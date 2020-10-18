@@ -1,11 +1,12 @@
 {
-  "name": "ipfs-snap",
+  "name": "recipient-address-auditor",
   "version": "1.0.0",
-  "description": "An IPFS Snap for MetaMask",
+  "description": "Audits recipients of new transactions and updates metamask state with audit results",
   "main": "index.js",
   "dependencies": {
-    "eth-json-rpc-errors": "^1.1.1",
-    "ipfs-mini": "^1.1.5"
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "graphql-request": "^3.1.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -20,8 +21,11 @@
   "web3Wallet": {
     "bundle": {
       "local": "dist/bundle.js",
-      "url": "http://localhost:8086/dist/bundle.js"
+      "url": "http://localhost:8082/dist/bundle.js"
     },
-    "initialPermissions": {}
+    "initialPermissions": {
+      "addAddressAudit": {},
+      "newUnapprovedTx": {}
+    }
   }
 }
