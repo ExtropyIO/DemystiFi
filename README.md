@@ -30,7 +30,7 @@ Areas to investigate
    1. Reporting facility for community to submit smart contract / project / address
    2. Idea - Token paid for reporting online
    3. Video demo to showcase plugin
-5. Pitch - Kirsty
+5. Pitch - Kirsty See: http://repo.extropy.io:3013/vBviyZgrSYeAf9hWYbDLsw#
    1. Twitter poll
    2. Desirability / feasibility / viability
    3. Problem facts and figures
@@ -44,6 +44,10 @@ Areas to investigate
       1b. Investigate fingerprints patterns and mutations
    2. Some scams: https://boxmining.com/newsletter-11/
    3. integrate public APIs like defiscore
+   4. https://underhanded.soliditylang.org/
+   5. https://eth2bounty.ethereum.org/
+   6. https://consensys.github.io/blockchainSecurityDB/
+   7. https://twitter.com/DonnieBigBags/status/1316741444498075648
 7. Sourcing social media clues and hints
    1. Twitter API
 8. EtherScan API (verification of contracts)

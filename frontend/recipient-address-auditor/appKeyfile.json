@@ -1,0 +1,7 @@
+{
+  "kdf": "scrypt",
+  "salt": "08a7a1e4d7f62cfcaa88ef7da99fcd59",
+  "secparam": "12",
+  "hint": "",
+  "ciphertext": "F8YEma6+k2pAcEWUjDAvk1qTLNpP2GNiIw6QoYiwv9g1XYd89zLB7F+h53iTp7XYhInHkG1g8jszx1XNt7rMXAViBAQfKjKCerAikXwx0eOpopTN49fy8x3frtcCoqx+mWEiuhK4ClQvqT4FYakbqypZzez9VT4yxvxwJlKHg+9UVhvRWeCWS4cXewuqfPKT"
+}

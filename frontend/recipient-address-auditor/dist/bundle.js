@@ -1,5 +1,6 @@
 () => (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 const { request, gql } = require('graphql-request');
+// const pokt = require('./pokt.js');
 
 // https://graphql.org/code/#javascript-1
 // https://github.com/prisma-labs/graphql-request
@@ -28,6 +29,15 @@ async function graphqlReq(address) {
   const data = await request(endpoint, query, variables);
 
   console.log(JSON.stringify(data, undefined, 2));
+}
+
+/**
+ * Verifies data from GraphQL with direct additional call to smart contract via Pokt
+ * @param {*} address
+ */
+async function web3Request(address) {
+  // Pokt Rinkeby
+  // Ticker (ETH	4), NetID (4), Network (ETH-4),	Chains ID (0022)
 }
 
 async function auditApi(address) {
@@ -67,9 +77,7 @@ wallet.onMetaMaskEvent('newUnapprovedTx', async (txMeta) => {
     address: txParams.to,
     auditor: 'Extropy.io Audits',
     status: addressIsUntrustworthy ? 'warning' : 'approval',
-    message: addressIsUntrustworthy
-      ? 'The recipient of this transaction is untrustworthy'
-      : 'The recipient of this transaction is trustworthy',
+    message: addressIsUntrustworthy ? "Don't send here!" : 'Do send here',
   });
 });
 

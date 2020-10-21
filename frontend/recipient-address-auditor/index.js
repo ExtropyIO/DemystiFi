@@ -1,5 +1,5 @@
 const { request, gql } = require('graphql-request');
-const pokt = require('./pokt.js');
+// const pokt = require('./pokt.js');
 
 // https://graphql.org/code/#javascript-1
 // https://github.com/prisma-labs/graphql-request
@@ -76,8 +76,6 @@ wallet.onMetaMaskEvent('newUnapprovedTx', async (txMeta) => {
     address: txParams.to,
     auditor: 'Extropy.io Audits',
     status: addressIsUntrustworthy ? 'warning' : 'approval',
-    message: addressIsUntrustworthy
-      ? 'The recipient of this transaction is untrustworthy'
-      : 'The recipient of this transaction is trustworthy',
+    message: addressIsUntrustworthy ? "Don't send here!" : 'Do send here',
   });
 });
